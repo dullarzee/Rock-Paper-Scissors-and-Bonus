@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@theme{
+    --color-bg1:hsl(214, 47%, 23%);
+    --color-bg2:hsl(237, 49%, 15%);
+    --font-barlow:barlow;
+    --inset-shadow-inner: inset 0px 7px 0px rgba(0, 0, 0, 0.2);
+
+    --animate-winner:winner 1s linear;
+    --animate-again:again 1.5s linear;
+    --animate-winnerOpp:winnerOpp 1s linear;
+    --animate-opp:opp 1s linear;
+    --animate-bonusButton:bonusButton 1s ease-out infinite;
+
+    @keyframes winner {
+        0%{
+           outline:0rem;
+           background-color:transparent;
+        }
+        50%{
+            background-color:transparent;
+        }
+        
+    }
+    
+
+    @keyframes winnerOpp {
+        0%{
+           outline:0rem;
+           opacity:0%;
+           background-color:transparent;
+        }
+        50%{
+            opacity:100%;
+            outline:0rem;
+            background-color:transparent;
+        }
+        100%{
+            
+        }
+        
+    }
+
+    @keyframes again{
+        0%,70%{
+            opacity:0%;
+        }
+        100%{
+            opacity:100%;
+        }
+    }
+
+    @keyframes opp{
+        0%{
+            opacity:0%;
+         }
+         50%{
+             opacity:100%;
+         }
+    }
+
+    @keyframes bonusButton {
+        0%,100%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(1.1);
+        }
+    }
+
+}
