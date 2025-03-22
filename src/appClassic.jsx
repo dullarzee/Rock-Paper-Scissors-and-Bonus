@@ -7,7 +7,7 @@ import HeaderSection from './header'
 import WinningSection from './winningSection'
 import Rules from './rules'
 import {RulesButton} from './rules'
-import rulesClassic from '../public/images/image-rules.svg'
+import rulesClassic from '/images/image-rules.svg'
 
 MainSection.propTypes = {
     myChoice:PropType.string,
@@ -94,9 +94,9 @@ function AppClassic({setShowClassic, ms, os, setMs, setOs}){
   return(
     <>
       <div className="w-full min-h-[100vh] border border-bg2">
-        <button onClick={handleSavingInfo} className="absolute lg:left-[90%] lg:top-[6%] bg-radial from-indigo-400
-         to-indigo-700 px-[1rem] py-[0.3rem] rounded-md text-lg cursor-pointer
-         top-[87%] left-[38%] animate-bonusButton">BONUS</button>
+        <button onClick={handleSavingInfo} className="fixed lg:absolute lg:left-[90%] lg:top-[6%] bg-radial from-indigo-400
+         to-indigo-700 px-[1rem] py-[0.3rem] rounded-full lg:rounded-md text-lg cursor-pointer
+         top-[86.5%] right-[2%] animate-bonusButton">BONUS</button>
         {/*header node for displaying score and game title*/}
           <HeaderSection myScore={myScore} opponentScore={opponentScore}>
              <img alt='classic logo' className="self-center h-[80%] lg:h-full" src={logo}></img>

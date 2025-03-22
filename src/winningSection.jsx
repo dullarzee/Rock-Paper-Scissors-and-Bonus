@@ -53,7 +53,7 @@ export default function WinningSection({myChoice, opponentChoice, setMyChoice}){
         {
            choice2 = 
             <CircleCont2 bColor='hsl(230, 89%, 65%)' bColor2='hsl(230, 89%, 54%)' scale={1.7}> 
-                <img alt="" className="w-full" src="/public/images/icon-paper.svg"></img>
+                <img alt="" className="w-full" src="/images/icon-paper.svg"></img>
             </CircleCont2>
         }
         else if(opponentChoice === 'scissors')
